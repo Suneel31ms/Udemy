@@ -1,0 +1,38 @@
+.container-fluid{
+    background-color: rgb(38, 163, 16);
+}
+.container-fluid .navbar-brand{
+    font-size: 30px;
+}
+ /* .nav-link{
+    font-size: 30px;
+} */
+#navbarSupportedContent .nav-link{
+    color: crimson;
+    background: cyan;
+}
+#navbarSupportedContent .xyz{
+    color: darkmagenta;
+}
+.formm .btn{
+    color: black;
+    font-size: 30px;
+}
+.formm .form-control{
+    border: 2px solid green;
+}
+.nb #db{
+    color: grey;
+}
+#exampleModalLabel{
+    color: hotpink;
+}
+#xxx{
+    background: indianred;
+}
+#mfoot{
+    background: lawngreen;
+}
+.prog, #inputPassword{
+    background: lightcoral;
+}
