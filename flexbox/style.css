@@ -1,0 +1,27 @@
+*{
+margin: 0%;
+padding: 0%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navb{
+    color: brown !important;
+}
+.container img{
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    transition: all 1s;
+    /* transform-origin: right bottom; */
+    
+}
+.container img:hover{
+    transform: scale(1.2);
+    /* transform:rotate(360deg); */
+    /* transform: translate(50%, 50%); */
+    /* transform: skewX(20deg); */
+    /* transform: scale(2) rotate(90deg) translate(50%, 50%) skewX(10deg); */
+}

@@ -1,0 +1,54 @@
+*{
+    margin: 0%; padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url("keyboard.jpg") no-repeat center center fixed;
+    /* background-position: center; */
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* height: 40%;
+    width: 80%; 
+    margin: auto; 
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 40px;*/
+}
+.row h1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: crimson;
+    text-shadow:  1px 2px tomato;
+    margin-bottom: 40px;
+}
+.row .btn-xl{
+    padding: 10px 20px;
+    width: 200px;
+}
+ .row .btn{
+    font-weight: bolder;
+    border-radius: 300px;
+    text-transform: uppercase;
+    background-color: tomato;
+    border: 2px solid tomato;
+}
+.row .btn:hover{
+    background-color: #ee4b08;
+    border-color: #ee4b08;
+    border-width: 4px;
+}
+.row hr{
+    margin: 20px auto;
+    max-width: 65px;
+    color: tomato;
+    border: 3px solid #F05F44;
+    opacity: 1;
+}
