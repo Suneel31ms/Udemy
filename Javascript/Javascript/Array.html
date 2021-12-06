@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Data Structure</title>
+</head>
+<body>
+    <script>
+        // ..........Array literals.....
+        var arr=["suneel","kapil","arav"];
+        document.write(arr);
+        document.write("<br>");
+        //....multiple Array............
+        var arrM=[
+            ["tiger","cat","lion","dog"],
+            ["sparrow","eagle","owl"]
+        ];
+        document.write(arrM[0]+"<br>");
+        document.write(arrM[0][2]+"<br>");
+        document.write(arrM[1][1]+"<br>");
+       
+        //.....Array using New Keyword....
+        var arr1=new Array();
+        // var arr1=new Array(4);
+        arr1[0]="sonu";
+        arr1[1]="monu";
+        arr1[2]=10;
+        arr1[3]=23;
+        for(var i=0;i<arr1.length;i++){
+            document.write(arr1[i]+" ");
+        }
+        
+        document.write("<hr>");
+        // -------------Array Method(Shift)....
+        var arry=["Ram","Sonu","Monu","Kumar"];
+        for(var i=0;i<arry.length;i++){
+            document.write(arry[i]+" ");
+        }
+        document.write("<br>");
+        document.write(arry.shift()+"<br>");//return index[first] element..
+        document.write(arry.pop()+"<br>");//return index[last] element..
+        document.write(arry+"<br>");
+        document.write(arry.push("sunny")+"<br>");//add element in index[last]..
+        document.write(arry+"<br>");
+        // document.write(arry.concat(["preeti","reeta"])+"<br>");//add another array list in existing array..
+        // document.write(arry+"<br>");
+        //........ concat want new varialbe to store a value 
+        var arrList=arry.concat(["preeti","reeta"]);
+        document.write(arrList+"<br>");
+    </script>
+</body>
+</html>

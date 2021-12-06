@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods...</title>
+</head>
+<body>
+    <script>
+        var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+        document.write(array+" ");
+        document.write("<br>");
+        array.shift(); //it deleted index as well as element als
+        // delete array[0]; // it delete element not a index .
+        document.write(array+" ");
+        document.write("<br>");
+        array.sort();//return the array list in alphabetic order.
+        document.write(array+" ");
+        document.write("<br>");
+        array.push("Kiwi");//it add the element into the last array index..
+        document.write(array+" ");
+        document.write("<br>");
+        array.shift();
+        document.write(array+" ");
+        document.write("<br>");
+        array.reverse();//it reverse the array
+        document.write(array+" ");
+        document.write("<br>");
+        document.write("copy: "+array.copyWithin(2,0));
+        document.write("<br>");
+        document.write(array.fill("grapes",1));
+        document.write("<br>");
+        //.......Array inside the array......
+        var arry2=["Banana",["Apples",["Oranges"],"Blueberries"]];
+         document.write("Arrays: "+arry2);
+         document.write("<br>");
+
+         //......................methods with take function...
+         //------------every() is check a array that all values are bigger than 18.(true,false)
+         var ages=[32,12,19,42];
+        //  var age=ages.every(checkAge);
+        //  var age=ages.filter(checkAge); //return all values which are greater then 18
+        //  var age=ages.find(checkAge); //return greater than 18 but only first value which search.
+          var age=ages.findIndex(checkAge); //return greater than 18 but only first value which search.
+         document.write(age);
+         function checkAge(value){
+             return value>18;
+         }
+         document.write("<br>");
+        //  ..............forEach()............
+        var fruit=["apple","banana","grapes","kiwi"];
+        
+        fruit.forEach(myFun);
+        function myFun(index,value){
+            document.write(value+":"+index+"<br>") ;
+        }
+        //includes()......
+        var inc=fruit.includes("Mango");
+        document.write(inc);
+        // .......from() method... covert a normal text variable into a array..
+        let txt="abcde";
+        var myarr=Array.from(txt);
+        document.write(myarr[1]);
+    </script>
+</body>
+</html>
