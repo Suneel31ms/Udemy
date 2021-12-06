@@ -55,13 +55,36 @@
         function myFun(index,value){
             document.write(value+":"+index+"<br>") ;
         }
+        document.write("<br>");
         //includes()......
         var inc=fruit.includes("Mango");
         document.write(inc);
+        document.write("<br>");
         // .......from() method... covert a normal text variable into a array..
         let txt="abcde";
         var myarr=Array.from(txt);
         document.write(myarr[1]);
+        document.write("<br>");
+        // -------------Array map() method........
+        var arry1=[2,3,5,8];
+        var arrr=arry1.map(myFunction);
+        document.write("Map Method: "+arrr);
+        function myFunction(value){
+            return value*2;
+        }
+        document.write("<br>");
+        // slice() method...........
+        var ar2=[10,"sonu","chauhan","kumar","Ram",22];
+        document.write(ar2+"<br>");
+        document.write("This is Array: "+Array.isArray(ar2)+"<br>");
+        var ar3=ar2.slice(1,3);
+        document.write(ar3);
+        document.write("<br>");
+        //---------splice() Method............
+        var spliceArray=["Suneel","Vivek","Kapil","Avinash"];
+        document.write(spliceArray+"<br>");
+        spliceArray.splice(2,2,"KAPIL","Arav");
+        document.write(spliceArray);
     </script>
 </body>
 </html>
