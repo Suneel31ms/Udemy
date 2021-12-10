@@ -8,8 +8,8 @@
     /* display: subgrid; */
     grid-gap: 20px 5px;
     /* grid-template-columns: 1fr 1fr 2fr; */
-    /* grid-template-columns: repeat(4, 1fr ); */
-     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     grid-template-columns: repeat(4, 1fr ); 
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     /* grid-template-columns: auto 1fr 2fr 2fr; */
     grid-template-rows: 1fr;
     /* grid-template: 200px / 400px; */
